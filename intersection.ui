@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Pierre Alliez</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>965</width>
+    <height>922</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Detecting intersection</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="GlViewer" name="viewer" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>910</width>
+      <height>910</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>965</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAlgorithms">
+    <property name="title">
+     <string>Algorithms</string>
+    </property>
+    <addaction name="actionRandom_Circles"/>
+    <addaction name="actionRandom_Ray"/>
+    <addaction name="actionBuild_KDTree"/>
+    <addaction name="actionDetect_Intersection"/>
+   </widget>
+   <widget class="QMenu" name="menuMeun">
+    <property name="title">
+     <string>Meun</string>
+    </property>
+    <addaction name="actionClearAll"/>
+    <addaction name="actionClear_Circles"/>
+    <addaction name="actionClear_Ray"/>
+   </widget>
+   <addaction name="menuMeun"/>
+   <addaction name="menuAlgorithms"/>
+  </widget>
+  <action name="actionRandom_Circles">
+   <property name="text">
+    <string>Random Circles</string>
+   </property>
+  </action>
+  <action name="actionClearAll">
+   <property name="text">
+    <string>Clear All</string>
+   </property>
+  </action>
+  <action name="actionRandom_Ray">
+   <property name="text">
+    <string>Random Ray</string>
+   </property>
+  </action>
+  <action name="actionBuild_KDTree">
+   <property name="text">
+    <string>Build KDTree</string>
+   </property>
+  </action>
+  <action name="actionDetect_Intersection">
+   <property name="text">
+    <string>Detect Intersection</string>
+   </property>
+  </action>
+  <action name="actionClear_Circles">
+   <property name="text">
+    <string>Clear Circles</string>
+   </property>
+  </action>
+  <action name="actionClear_Ray">
+   <property name="text">
+    <string>Clear Ray</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GlViewer</class>
+   <extends>QWidget</extends>
+   <header>glviewer.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
