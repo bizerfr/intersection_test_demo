@@ -1,3 +1,3 @@
 # intersection_test_demo
 
-demo for line and circle detection using kd-tree
+demo for detection of intersection of a line and circles using kd-tree
